@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 //@Slf4j
 //@Log4j
-//@Log4j2
+
 /*-------use one annotation with Lombok according to use--------*/
 
 @RestController
