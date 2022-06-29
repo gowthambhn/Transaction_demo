@@ -18,15 +18,27 @@ import java.util.Date;
 @Table(name = "PASSENGER_INFOS")
 public class PassengerInfo {
     @Id
+    //Id Will be Auto generated
     @GeneratedValue
     private Long pId;
+
     private String name;
+
     private String email;
+
     private String source;
+
     private String Destination;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+
+    //Date will be type "Date" But i need to pass string input from my json request
+
     private Date travelDate;
+
     private String pickupTime;
+
     private String arrivalTime;
+
     private double fare;
 }

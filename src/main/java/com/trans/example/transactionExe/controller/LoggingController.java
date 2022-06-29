@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 //@Slf4j
-//@Log4j
 
 /*-------use one annotation with Lombok according to use--------*/
 
@@ -25,8 +24,6 @@ public class LoggingController {
 private static final Logger logger = LoggerFactory.getLogger(LoggingController.class);
     /*-------------to use slf4j use this without Lombok----------*/
 
-//    private static final Logger logger = LogManager.getLogger(LoggingController.class);
-    /*-------------to use log4j use this without Lombok----------*/
 
     @GetMapping
     public ResponseEntity<?> showLogs() {
